@@ -1,4 +1,4 @@
-# -Mini-Market-Mini-_C.I
+# -Mini-Market-_C.I
 
 Nama Anggota 
 1. Adam Purwo Pratama

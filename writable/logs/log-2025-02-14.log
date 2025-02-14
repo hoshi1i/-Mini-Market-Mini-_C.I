@@ -1,0 +1,64 @@
+CRITICAL - 2025-02-14 02:04:39 --> mysqli_sql_exception: Unknown database 'db_login'
+[Method: GET, Route: login]
+in APPPATH\Views\project_ci\config.php on line 7.
+ 1 APPPATH\Views\project_ci\config.php(7): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'db_login')
+ 2 APPPATH\Views\project_ci\login.php(2): include('C:\\xampp\\htdocs\\ci4web\\app\\Views\\project_ci\\config.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci4web\\app\\Views\\project_ci\\login.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('project_ci/login', [], true)
+ 6 APPPATH\Controllers\contlogin.php(9): view('project_ci/login')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\contlogin->login()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\contlogin))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ci4web\\public\\index.php')
+CRITICAL - 2025-02-14 02:11:18 --> ErrorException: Undefined variable $id_user
+[Method: GET, Route: login]
+in APPPATH\Views\project_ci\config.php on line 7.
+ 1 APPPATH\Views\project_ci\config.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_user', 'C:\\xampp\\htdocs\\ci4web\\app\\Views\\project_ci\\config.php', 7)
+ 2 APPPATH\Views\project_ci\login.php(2): include('C:\\xampp\\htdocs\\ci4web\\app\\Views\\project_ci\\config.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci4web\\app\\Views\\project_ci\\login.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('project_ci/login', [], true)
+ 6 APPPATH\Controllers\contlogin.php(9): view('project_ci/login')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\contlogin->login()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\contlogin))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ci4web\\public\\index.php')
+CRITICAL - 2025-02-14 02:12:09 --> ErrorException: Undefined variable $email
+[Method: GET, Route: login]
+in APPPATH\Views\project_ci\config.php on line 7.
+ 1 APPPATH\Views\project_ci\config.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email', 'C:\\xampp\\htdocs\\ci4web\\app\\Views\\project_ci\\config.php', 7)
+ 2 APPPATH\Views\project_ci\login.php(2): include('C:\\xampp\\htdocs\\ci4web\\app\\Views\\project_ci\\config.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci4web\\app\\Views\\project_ci\\login.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('project_ci/login', [], true)
+ 6 APPPATH\Controllers\contlogin.php(9): view('project_ci/login')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\contlogin->login()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\contlogin))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ci4web\\public\\index.php')
+CRITICAL - 2025-02-14 02:12:29 --> mysqli_sql_exception: Unknown database 'db_login'
+[Method: GET, Route: login]
+in APPPATH\Views\project_ci\config.php on line 7.
+ 1 APPPATH\Views\project_ci\config.php(7): mysqli->__construct('localhost', 'root', Object(SensitiveParameterValue), 'db_login')
+ 2 APPPATH\Views\project_ci\login.php(2): include('C:\\xampp\\htdocs\\ci4web\\app\\Views\\project_ci\\config.php')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\ci4web\\app\\Views\\project_ci\\login.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('project_ci/login', [], true)
+ 6 APPPATH\Controllers\contlogin.php(9): view('project_ci/login')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\contlogin->login()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\contlogin))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\ci4web\\public\\index.php')

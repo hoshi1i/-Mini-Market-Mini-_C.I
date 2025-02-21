@@ -7,9 +7,10 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->get('/login', 'contlogin::login');
-$routes->get('/daftar', 'contdaftar::daftar');
-$routes->get('/dashboard', 'contdaftar::index');
+$routes->get('/daftar', 'Home::daftar');
 $routes->get('/keranjang', 'contkeranjang::keranjang');
+$routes->post('/process_register', 'register::insert_register');
+
 
 
 

@@ -12,7 +12,10 @@ final class ExampleDatabaseTest extends CIUnitTestCase
 {
     use DatabaseTestTrait;
 
+    protected $refresh = true; // Agar database selalu diperbarui sebelum test
+    protected $seedOnce = false;
     protected $seed = ExampleSeeder::class;
+    protected $basePath = 'app/Database/Migrations';
 
     public function testModelFindAll(): void
     {
@@ -31,7 +34,6 @@ final class ExampleDatabaseTest extends CIUnitTestCase
         $this->setPrivateProperty($model, 'useSoftDeletes', true);
         $this->setPrivateProperty($model, 'tempUseSoftDeletes', true);
 
-        /** @var stdClass $object */
         $object = $model->first();
         $model->delete($object->id);
 

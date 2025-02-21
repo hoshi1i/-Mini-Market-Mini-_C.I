@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Models;
+namespace App\models;
+ use CodeIgniter\model;
 
-use CodeIgniter\Model;
-
-class UserModel extends Model 
-{
+ class UserModel extends Model 
+ {
     protected $table = 'db_login';
-    protected $primary_key = 'id_user';
-    protected $allowedfields = ['email','password','username'];
+    protected $primarykey = 'id_user';
+    protected $allowedFields = ['email', 'username', 'password'];
 }

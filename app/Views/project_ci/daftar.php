@@ -8,42 +8,41 @@
 </head>
 <body>
 
+
+
     <div class="register-container">
         <h2>Daftar Akun</h2>
-        <form>
+        <form action="<?= base_url('/process_register') ?>" method="post">
+
             <label for="email">Masukan Email atau No Telp:</label>
             <div class="input-group">
-                <input type="text" id="email" placeholder="Masukan Email atau No Telp.">
+                <input type="text" id="email" name="email" placeholder="Masukan Email atau No Telp.">
                 <span class="toggle-password">👁</span>
             </div>
 
             <label for="username">Username:</label>
             <div class="input-group">
-                <input type="text" id="username" placeholder="Masukan Username.">
+                <input type="text" id="username" name="username" placeholder="Masukan Username.">
                 <span class="toggle-password">👁</span>
             </div>
 
             <label for="password">Password:</label>
             <div class="input-group">
-                <input type="password" id="password" placeholder="Masukan Password.">
+                <input type="password" id="password" name="password" placeholder="Masukan Password.">
                 <span class="toggle-password">👁</span>
             </div>
 
-            <label for="alamat">Alamat:</label>
-            <div class="input-group">
-                <input type="text" id="alamat" placeholder="Masukan Alamat.">
-                <span class="toggle-password">👁</span>
-            </div>
-
-            <button type="submit">Daftar</button>
+            <button type="submit">Submit</button>
             <button  type="kembali"><a href='/' style="color: white; font-weight:bold; text-decoration:none;">Kembali</a></button>
         </form>
+
     </div>
 
 </body>
 </html>
 
-<style>body {
+<style>
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,9 +61,8 @@
 }
 
 h2 {
-    font-size: 28px;
-    color: white;
-    background: linear-gradient(to right, #002D96, #00C6FB);
+    font-size: 40px;
+    color: black;
     padding: 10px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -113,6 +111,6 @@ button {
 }
 
 button:hover {
-    background: #0056b3;
+    background: #0056b3;
 }
 </style>

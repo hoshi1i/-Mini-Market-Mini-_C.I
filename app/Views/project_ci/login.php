@@ -1,25 +1,3 @@
-<?php
-include 'config.php';
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = $_POST['email'];
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-
-    // Enkripsi password sebelum menyimpan
-    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-
-    $sql = "INSERT INTO db_login (id_user, email, password, username) VALUES ('id_user', '$email', '$password', '$username')";
-
-    if ($conn->query($sql) === TRUE) {
-        echo "Registrasi berhasil! Silakan login.";
-    } else {
-        echo "Error: " . $conn->error;
-    }
-}
-
-$conn->close();
-?>
 
 <!DOCTYPE html>
 <html lang="id">
